@@ -6,6 +6,13 @@
   margin: 0;
   padding: 0;
 }
+
+body.theme{
+  background-color: #333;
+}
+.theme button{
+  color: #fff;
+}
 /* Global Styles */
 img {
   width: 100%;
@@ -22,13 +29,16 @@ body {
   overflow: hidden;
   height: 100vh;
 }
+
 /* Main Styles */
 .wrapper {
   width: 750px;
 }
+
 .search {
   width: 750px;
 }
+
 .search_input {
   background: #fafaf6;
   width: 85%;
@@ -46,6 +56,7 @@ body {
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
     0 15px 40px rgba(0, 0, 0, 0.1);
 }
+
 .info {
   width: 100%;
   display: flex;
@@ -62,6 +73,7 @@ body {
   text-align: center;
   padding: 15px 0px;
 }
+
 .image {
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -75,36 +87,42 @@ body {
   margin: 30px 0px;
   margin-bottom: 0px;
 }
+
 .user_data {
   width: 90%;
   margin: 30px 35px;
   align-self: center;
   margin-bottom: 10px;
 }
+
 .user_data h2 {
   font-size: 1.6em;
   font-weight: 600;
   margin-bottom: 10px;
   text-align: center;
 }
+
 .user_data p {
   font-size: 1em;
   font-weight: 400;
   margin-bottom: 10px;
   text-align: center;
 }
+
 .user_data ul {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 500;
-    width: 80%;
-    margin: 30px auto;
-    flex-wrap: wrap;
-    gap: 1em;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  width: 80%;
+  margin: 30px auto;
+  flex-wrap: wrap;
+  gap: 1em;
 }
+
 .user_data ul li {
   list-style: none;
 }
+
 .repo a {
   display: inline-block;
   background: #ddd;
@@ -118,31 +136,45 @@ body {
   font-weight: 500;
 }
 
+button.app_btn {
+  padding: 0.8em 2em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  font-size: 2em;
+}
+
 /* Responsive css */
 @media (max-width: 800px) {
   .wrapper {
     width: 90%;
   }
+
   .search {
     width: 90% !important;
   }
+
   .user_data ul {
     width: 100%;
     text-align: center;
     font-size: 0.9em;
   }
+
   .user_data h2 {
     font-size: 1.2em;
     font-weight: 600;
     margin-bottom: 10px;
     text-align: center;
   }
+
   .user_data p {
     font-size: 0.9em;
     font-weight: 400;
     margin-bottom: 10px;
     text-align: center;
   }
+
   .user_data {
     margin: 30px 20px;
     align-self: center;

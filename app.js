@@ -1,6 +1,18 @@
 //Selector
 const search_form = document.querySelector(".search_form");
+const app_btn = document.querySelector(".app_btn");
 const search_input = document.querySelector(".search_input");
+
+app_btn.addEventListener("click", (e) => {
+  if (e.target.classList.contains('fa-sun')){
+    document.querySelector('body').classList.add('theme')
+    app_btn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+  }
+  else{
+    app_btn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    document.querySelector('body').classList.remove('theme')
+  }
+});
 
 // Base url
 let url = "https://api.github.com/users/";
